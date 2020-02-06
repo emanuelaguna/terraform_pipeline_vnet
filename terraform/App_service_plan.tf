@@ -3,7 +3,7 @@ terraform {
 
 
     backend "azurerm" {
-        storage_account_name = "terrastorageaccount"
+        storage_account_name = "floappaccount"
         container_name       = "terraform"
         key                  = "terraform.tfstate"
         access_key           = "DefaultEndpointsProtocol=https;AccountName=floappaccount;AccountKey=fHccV8GckC3WSbAS6IdC0J9A+ZqBREoweQ1LksqXMh+JjDVSW6zoDmoq0Rg0bSUflgXabw5WcGXhBcOaK4RsqQ==;EndpointSuffix=core.windows.net"
