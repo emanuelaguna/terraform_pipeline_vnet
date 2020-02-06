@@ -1,3 +1,13 @@
+variable "location" {
+  default     = "southcentralus"
+}
+
+variable "access_key" {
+  default     = "fHccV8GckC3WSbAS6IdC0J9A+ZqBREoweQ1LksqXMh+JjDVSW6zoDmoq0Rg0bSUflgXabw5WcGXhBcOaK4RsqQ=="
+}
+
+
+
 variable "virtual_network_name" {
   description = "The name for de virtual network."
   default     = "FLOAPP-vNET_Terra"

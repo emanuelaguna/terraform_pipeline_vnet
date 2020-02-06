@@ -6,18 +6,18 @@ terraform {
         storage_account_name = "terrastorageaccount"
         container_name       = "terraform"
         key                  = "terraform.tfstate"
-        access_key           = "__storagekey__"
+        access_key           = "${var.access_key}"
     }
 }
 
 resource "azurerm_resource_group" "rg" {
-  name              = "__resource_group__"
-  location          = "__location__"
+  name              = "terra-rg"
+  location          = "${var.location}"
 }
 
 resource "azurerm_virtual_network" "vnet" {
     name                = "${var.virtual_network_name}"
-    location            = "__location__"
+    location            = "${var.location}"
     address_space       = ["${var.address_space}"]
     resource_group_name = "${azure_resource_group.rg.name}"
 }
