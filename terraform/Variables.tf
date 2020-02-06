@@ -2,9 +2,9 @@ variable "location" {
   default     = "southcentralus"
 }
 
-variable "access_key" {
-  default     = "fHccV8GckC3WSbAS6IdC0J9A+ZqBREoweQ1LksqXMh+JjDVSW6zoDmoq0Rg0bSUflgXabw5WcGXhBcOaK4RsqQ=="
-}
+# variable "access_key" {
+#   default     = "fHccV8GckC3WSbAS6IdC0J9A+ZqBREoweQ1LksqXMh+JjDVSW6zoDmoq0Rg0bSUflgXabw5WcGXhBcOaK4RsqQ=="
+# }
 
 
 
