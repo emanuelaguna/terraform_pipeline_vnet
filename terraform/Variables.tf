@@ -1,6 +1,6 @@
 variable "virtual_network_name" {
   description = "The name for de virtual network."
-  description = "FLOAPP-vNET-Terra"
+  default     = "FLOAPP-vNET"
 }
 
 variable "address_space" {
