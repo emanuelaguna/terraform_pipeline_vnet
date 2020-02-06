@@ -23,13 +23,13 @@ resource "azurerm_virtual_network" "vnet" {
 }
 
 resource "azurerm_subnet" "subnetfrontend" {
-  name                  = "${var.subnetname_prefixbackend}"
+  name                  = "${var.subnetname_prefixfrontend}"
   virtual_network_name  = "${azurerm_virtual_network.vnet.name}"
   resource_group_name   = "${azurerm_resource_group.rg.name}"
-  address_prefix        = "${var.subnet_prefixbackend}"
+  address_prefix        = "${var.subnet_prefixfrontend}"
 }
 
-resource "azurerm" "subnetbackend" {
+resource "azurerm_subnet" "subnetbackend" {
   name                  = "${var.subnetname_prefixbackend}"
   virtual_network_name  = "${azurerm_virtual_network.vnet.name}"
   resource_group_name   = "${azurerm_resource_group.rg.name}"

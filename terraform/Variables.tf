@@ -6,8 +6,6 @@ variable "location" {
 #   default     = "fHccV8GckC3WSbAS6IdC0J9A+ZqBREoweQ1LksqXMh+JjDVSW6zoDmoq0Rg0bSUflgXabw5WcGXhBcOaK4RsqQ=="
 # }
 
-
-
 variable "virtual_network_name" {
   description = "The name for de virtual network."
   default     = "FLOAPP-vNET_Terra"
@@ -21,6 +19,11 @@ variable "address_space" {
 variable "subnetname_prefixfrontend" {
   description = "The shortened abbreviation to represent your resource group that will go on the front of some resources." 
   default     = "Frontend"
+}
+
+variable "subnetname_prefixbackend" {
+  description = "The shortened abbreviation to represent your resource group that will go on the front of some resources." 
+  default     = "Backend"
 }
 
 variable "subnet_prefixfrontend" {
